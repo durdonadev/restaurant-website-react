@@ -2,7 +2,7 @@ import logoWhite from "../../assets/logo-white.svg";
 import cart from "../../assets/cart.svg";
 import "../Header/Header.css";
 
-export const Header = () => {
+const Header = () => {
     return (
         <header className="header">
             <nav className="navigation">
@@ -39,3 +39,5 @@ export const Header = () => {
         </header>
     );
 };
+
+export { Header };
