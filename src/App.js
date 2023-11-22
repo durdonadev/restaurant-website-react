@@ -7,6 +7,7 @@ import { Reservation } from "./components/Reservation/Reservation.js";
 import { Chefs } from "./components/Chefs/Chefs.js";
 import { Testimonials } from "./components/Testimonials/Testimonials.js";
 import { Hours } from "./components/Hours/Hours.js";
+import { Footer } from "./components/Footer/Footer.js";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
             <Chefs />
             <Testimonials />
             <Hours />
+            <Footer />
         </>
     );
 }
