@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/fonts/Poppins-Regular.ttf) format(truetype);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/fonts/Poppins-SemiBold.ttf) format(truetype);
+    font-weight: 600;
+}
+
+:root {
+    --orange-color: rgb(255, 138, 0);
+    --green-color: rgb(63, 167, 47);
+    --white-color: rgb(255, 255, 255);
+    --black-color: rgb(49, 31, 9);
+    --gray-color: rgb(239, 240, 241);
+    --text-color: rgb(92, 69, 41);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--black-color);
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.hero-section__container,
+.menu-section__container,
+.chefs-section__container,
+.testimonials-section__container,
+.hours-section__container,
+.footer__container {
+    padding: 80px;
+}
+
+.welcome-section__right p,
+.reservation-section__right p,
+.hours-section__lunch-dinner p {
+    font-size: 20px;
+    line-height: 40px;
+}
+.btn {
+    border: none;
+    cursor: pointer;
+}
+
+.btn-sm {
+    height: 50px;
+    border-radius: 133px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.btn-md {
+    height: 55px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 162px;
+    padding-right: 36px;
+    padding-left: 36px;
+}
+
+.btn-lg {
+    height: 74px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 162px;
+    padding-right: 55px;
+    padding-left: 55px;
+}
+
+.btn-green {
+    color: var(--white-color);
+    background-color: var(--green-color);
+}
+
+.btn-orange {
+    color: var(--white-color);
+    background-color: var(--orange-color);
+}
+
+.btn-black {
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.btn-gray {
+    color: var(--black-color);
+    background-color: var(--gray-color);
+}
+
+.btn-white {
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+/* Container */
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
