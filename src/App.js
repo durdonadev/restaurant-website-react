@@ -5,6 +5,7 @@ import { Welcome } from "./components/Welcome/Welcome.js";
 import { Menu } from "./components/Menu/Menu.js";
 import { Reservation } from "./components/Reservation/Reservation.js";
 import { Chefs } from "./components/Chefs/Chefs.js";
+import { Testimonials } from "./components/Testimonials/Testimonials.js";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Menu />
             <Reservation />
             <Chefs />
+            <Testimonials />
         </>
     );
 }
