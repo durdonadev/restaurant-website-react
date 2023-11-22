@@ -6,6 +6,7 @@ import { Menu } from "./components/Menu/Menu.js";
 import { Reservation } from "./components/Reservation/Reservation.js";
 import { Chefs } from "./components/Chefs/Chefs.js";
 import { Testimonials } from "./components/Testimonials/Testimonials.js";
+import { Hours } from "./components/Hours/Hours.js";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             <Reservation />
             <Chefs />
             <Testimonials />
+            <Hours />
         </>
     );
 }
