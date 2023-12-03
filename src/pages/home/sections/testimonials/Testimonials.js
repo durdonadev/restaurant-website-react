@@ -1,9 +1,8 @@
 import React from "react";
+import starla from "../../../../assets/customer-2.png";
+import james from "../../../../assets/customer-1.png";
+import tosh from "../../../../assets/customer-3.png";
 import "./Testimonials.css";
-import customers from "../../assets/customers.png";
-import starla from "../../assets/customer-2.png";
-import james from "../../assets/customer-1.png";
-import tosh from "../../assets/customer-3.png";
 
 class Testimonials extends React.Component {
     render() {

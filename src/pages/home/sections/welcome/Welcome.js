@@ -1,6 +1,6 @@
 import React from "react";
+import salad from "../../../../assets/salad.png";
 import "./Welcome.css";
-import salad from "../../assets/salad.png";
 
 class Welcome extends React.Component {
     render() {

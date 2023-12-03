@@ -1,6 +1,6 @@
 import React from "react";
+import hero from "../../../../assets/hero.png";
 import "./Hero.css";
-import hero from "../../assets/hero.png";
 
 class Hero extends React.Component {
     render() {
