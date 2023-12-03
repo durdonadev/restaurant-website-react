@@ -5,6 +5,22 @@ import instagram from "../../../../assets/instagram.svg";
 import facebook from "../../../../assets/facebook.svg";
 import "./Footer.css";
 
+const pageLinks = [
+    { text: "Home", link: "https://google.com" },
+    { text: "Menu", link: "" },
+    { text: "Order Online ", link: "" },
+    { text: "Catering", link: "" },
+    { text: "Reservation", link: "" }
+];
+
+const informationLinks = [
+    { text: "About Us", link: "" },
+    { text: "Testimonial", link: "" },
+    { text: "Event ", link: "" },
+    { text: "Catering", link: "" },
+    { text: "Reservation", link: "" }
+];
+
 class Footer extends React.Component {
     render() {
         return (
@@ -29,33 +45,31 @@ class Footer extends React.Component {
                         </div>
                         <div className="footer__pages">
                             <h4 className="footer__heading">Page</h4>
-                            <a href="" className="footer__text">
-                                Home
-                            </a>
-                            <a href="" className="footer__text">
-                                Menu
-                            </a>
-                            <a href="" className="footer__text">
-                                Order Online
-                            </a>
-                            <a href="" className="footer__text">
-                                Catering
-                            </a>
-                            <a href="" className="footer__text">
-                                Reservation
-                            </a>
+                            {pageLinks.map((link, idx) => {
+                                return (
+                                    <a
+                                        href={link.link}
+                                        className="footer__text"
+                                        key={idx}
+                                    >
+                                        {link.text}
+                                    </a>
+                                );
+                            })}
                         </div>
                         <div className="footer__about">
                             <h4 className="footer__heading">Information</h4>
-                            <a href="" className="footer__text">
-                                About us
-                            </a>
-                            <a href="" className="footer__text">
-                                Testimonial
-                            </a>
-                            <a href="" className="footer__text">
-                                Event
-                            </a>
+                            {informationLinks.map((link, idx) => {
+                                return (
+                                    <a
+                                        href={link.link}
+                                        className="footer__text"
+                                        key={idx}
+                                    >
+                                        {link.text}
+                                    </a>
+                                );
+                            })}
                         </div>
                         <div className="footer__contact">
                             <h4 className="footer__heading">Get In Touch</h4>
