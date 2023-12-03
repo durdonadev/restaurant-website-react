@@ -35,17 +35,9 @@
     color: var(--orange-color);
 }
 
-#navigation__link {
+.navigation__links li:first-child a {
     color: var(--orange-color);
 }
-
-/* .navigation__links li:first-child a {
-  color: var(--orange-color);
-} */
-
-/* .navigation__links .navigation__link {
-  color: var(--orange-color);
-} */
 
 .navigation__actions {
     display: flex;
