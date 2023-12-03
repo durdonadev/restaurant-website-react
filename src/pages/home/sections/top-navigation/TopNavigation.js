@@ -2,32 +2,28 @@ import logoWhite from "../../../../assets/logo-white.svg";
 import cart from "../../../../assets/cart.svg";
 import "./TopNavigation.css";
 
+const links = [
+    { text: "Home", link: "https://google.com" },
+    { text: "Menu", link: "https://facebook.com" },
+    { text: "About Us", link: "" },
+    { text: "Reservation", link: "" },
+    { text: "Contact Us", link: "" },
+    { text: "Branding", link: "./branding.html" }
+];
+
 const TopNavigation = () => {
     return (
         <header className="header">
             <nav className="navigation">
                 <img src={logoWhite} alt="DeliziOso" className="logo-white" />
                 <ul className="navigation__links">
-                    <li>
-                        <a href="" id="navigation__link">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">Menu</a>
-                    </li>
-                    <li>
-                        <a href="">About Us</a>
-                    </li>
-                    <li>
-                        <a href="">Reservation</a>
-                    </li>
-                    <li>
-                        <a href="">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="./branding.html">Branding</a>
-                    </li>
+                    {links.map((link) => {
+                        return (
+                            <li>
+                                <a href={link.link}>{link.text}</a>
+                            </li>
+                        );
+                    })}
                 </ul>
                 <div className="navigation__actions">
                     <figure>
