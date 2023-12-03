@@ -17,9 +17,9 @@ const TopNavigation = () => {
             <nav className="navigation">
                 <img src={logoWhite} alt="DeliziOso" className="logo-white" />
                 <ul className="navigation__links">
-                    {links.map((link) => {
+                    {links.map((link, idx) => {
                         return (
-                            <li>
+                            <li key={idx}>
                                 <a href={link.link}>{link.text}</a>
                             </li>
                         );
