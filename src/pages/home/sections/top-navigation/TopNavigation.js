@@ -1,8 +1,8 @@
-import logoWhite from "../../assets/logo-white.svg";
-import cart from "../../assets/cart.svg";
-import "../Header/Header.css";
+import logoWhite from "../../../../assets/logo-white.svg";
+import cart from "../../../../assets/cart.svg";
+import "./TopNavigation.css";
 
-const Header = () => {
+const TopNavigation = () => {
     return (
         <header className="header">
             <nav className="navigation">
@@ -40,4 +40,4 @@ const Header = () => {
     );
 };
 
-export { Header };
+export { TopNavigation };

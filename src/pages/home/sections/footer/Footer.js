@@ -1,9 +1,9 @@
 import React from "react";
+import logo_dark from "../../../../assets/logo-dark.svg";
+import twitter from "../../../../assets/twitter.svg";
+import instagram from "../../../../assets/instagram.svg";
+import facebook from "../../../../assets/facebook.svg";
 import "./Footer.css";
-import logo_dark from "../../assets/logo-dark.svg";
-import twitter from "../../assets/twitter.svg";
-import instagram from "../../assets/instagram.svg";
-import facebook from "../../assets/facebook.svg";
 
 class Footer extends React.Component {
     render() {

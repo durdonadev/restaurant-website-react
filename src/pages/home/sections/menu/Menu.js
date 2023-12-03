@@ -1,13 +1,13 @@
 import React from "react";
+import menuSpaghetti from "../../../../assets/menu-spaghetti.png";
+import menuGnocchi from "../../../../assets/menu-gnocchi.png";
+import menuRoviolli from "../../../../assets/menu-rovioli.png";
+import menuPenneAllVodak from "../../../../assets/menu-penne-alla-vodak.png";
+import menuRisoto from "../../../../assets/menu-risoto.png";
+import menuSplitza from "../../../../assets/menu-splitza.png";
+import starFilled from "../../../../assets/star-filled.svg";
+import starEmpty from "../../../../assets/star-empty.svg";
 import "./Menu.css";
-import menuSpaghetti from "../../assets/menu-spaghetti.png";
-import menuGnocchi from "../../assets/menu-gnocchi.png";
-import menuRoviolli from "../../assets/menu-rovioli.png";
-import menuPenneAllVodak from "../../assets/menu-penne-alla-vodak.png";
-import menuRisoto from "../../assets/menu-risoto.png";
-import menuSplitza from "../../assets/menu-splitza.png";
-import starFilled from "../../assets/star-filled.svg";
-import starEmpty from "../../assets/star-empty.svg";
 
 class Menu extends React.Component {
     render() {

@@ -1,6 +1,6 @@
 import React from "react";
+import reservation from "../../../../assets/reservation.png";
 import "./Reservation.css";
-import reservation from "../../assets/reservation.png";
 
 class Reservation extends React.Component {
     render() {

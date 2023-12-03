@@ -1,8 +1,8 @@
 import React from "react";
+import ferry from "../../../../assets/ferry.png";
+import iswan from "../../../../assets/iswan.png";
+import betran from "../../../../assets/betran.png";
 import "./Chefs.css";
-import ferry from "../../assets/ferry.png";
-import iswan from "../../assets/iswan.png";
-import betran from "../../assets/betran.png";
 
 class Chefs extends React.Component {
     render() {
