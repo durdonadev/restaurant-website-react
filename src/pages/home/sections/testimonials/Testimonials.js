@@ -1,8 +1,17 @@
 import React from "react";
-import starla from "../../../../assets/customer-2.png";
-import james from "../../../../assets/customer-1.png";
-import tosh from "../../../../assets/customer-3.png";
 import "./Testimonials.css";
+import { testimonials } from "./data";
+
+const Testimonial = (props) => {
+    return (
+        <div className="testimonials-section__testimonial">
+            <img src={props.image} alt={props.name} />
+            <h4>{props.name}</h4>
+            <h5>{props.job}</h5>
+            <p>{props.text}</p>
+        </div>
+    );
+};
 
 class Testimonials extends React.Component {
     render() {
@@ -12,39 +21,17 @@ class Testimonials extends React.Component {
                     <div>
                         <h2>Our customers say</h2>
                         <div className="testimonials-section__testimonials">
-                            <div className="testimonials-section__testimonial">
-                                <img src={starla} alt="Starla" />
-                                <h4>Starla Virgoun</h4>
-                                <h5>Financial Adviser</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Facilisis ultricies at
-                                    eleifend proin. Congue nibh nulla malesuada
-                                    ultricies nec quam
-                                </p>
-                            </div>
-                            <div className="testimonials-section__testimonial">
-                                <img src={james} alt="James" />
-                                <h4>James Steven</h4>
-                                <h5>Uber Driver</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Facilisis ultricies at
-                                    eleifend proin. Congue nibh nulla malesuada
-                                    ultricies nec quam
-                                </p>
-                            </div>
-                            <div className="testimonials-section__testimonial">
-                                <img src={tosh} alt="Tosh" />
-                                <h4>Tosh Mat</h4>
-                                <h5>Teacher</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Facilisis ultricies at
-                                    eleifend proin. Congue nibh nulla malesuada
-                                    ultricies nec quam
-                                </p>
-                            </div>
+                            {testimonials.map((testimonial, idx) => {
+                                return (
+                                    <Testimonial
+                                        key={idx}
+                                        name={testimonial.name}
+                                        image={testimonial.image}
+                                        job={testimonial.job}
+                                        text={testimonial.text}
+                                    />
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

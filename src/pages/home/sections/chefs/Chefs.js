@@ -1,8 +1,17 @@
 import React from "react";
-import ferry from "../../../../assets/ferry.png";
-import iswan from "../../../../assets/iswan.png";
-import betran from "../../../../assets/betran.png";
 import "./Chefs.css";
+import { chefs } from "./data";
+import { Button } from "../../../../design-system/Button/Button";
+
+const Chef = (props) => {
+    return (
+        <div className="chefs-section__chef">
+            <img src={props.image} alt={props.name} />
+            <h4>{props.name}</h4>
+            <p>{props.position}</p>
+        </div>
+    );
+};
 
 class Chefs extends React.Component {
     render() {
@@ -13,25 +22,20 @@ class Chefs extends React.Component {
                         Our Greatest <span>Chefs</span>
                     </h2>
                     <div className="chefs-section__chefs">
-                        <div className="chefs-section__chef">
-                            <img src={betran} alt="Betran Chef" />
-                            <h4>Betrann Komar</h4>
-                            <p>Head Chef</p>
-                        </div>
-
-                        <div className="chefs-section__chef">
-                            <img src={ferry} alt="Ferry Chef" />
-                            <h4>Ferry Sauwi</h4>
-                            <p>Chef</p>
-                        </div>
-
-                        <div className="chefs-section__chef">
-                            <img src={iswan} alt="Iswan Chef" />
-                            <h4>Iswan Dracho</h4>
-                            <p>Chef</p>
-                        </div>
+                        {chefs.map((chef, idx) => {
+                            return (
+                                <Chef
+                                    key={idx}
+                                    name={chef.name}
+                                    image={chef.image}
+                                    position={chef.position}
+                                />
+                            );
+                        })}
                     </div>
-                    <button className="btn btn-lg btn-orange">More</button>
+                    <Button size="lg" color="orange">
+                        More
+                    </Button>
                 </div>
             </section>
         );

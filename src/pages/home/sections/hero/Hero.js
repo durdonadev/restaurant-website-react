@@ -1,6 +1,7 @@
 import React from "react";
 import hero from "../../../../assets/hero.png";
 import "./Hero.css";
+import { Button } from "../../../../design-system/Button/Button";
 
 class Hero extends React.Component {
     render() {
@@ -18,12 +19,12 @@ class Hero extends React.Component {
                             donec eget.
                         </p>
                         <div className="hero-section__cta">
-                            <button className="btn btn-lg btn-orange">
+                            <Button size="lg" color="orange">
                                 Order Now
-                            </button>
-                            <button className="btn btn-lg btn-green">
+                            </Button>
+                            <Button size="lg" color="green">
                                 Reservation
-                            </button>
+                            </Button>
                         </div>
                     </div>
 
