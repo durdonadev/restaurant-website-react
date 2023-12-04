@@ -1,6 +1,8 @@
 import React from "react";
-import reservation from "../../../../assets/reservation.png";
 import "./Reservation.css";
+import { Button } from "../../../../design-system/Button/Button";
+
+import reservation from "../../../../assets/reservation.png";
 
 class Reservation extends React.Component {
     render() {
@@ -23,9 +25,9 @@ class Reservation extends React.Component {
                             elit. Facilisis ultricies at eleifend proin. Congue
                             nibh nulla malesuada ultricies nec quam
                         </p>
-                        <button className="btn btn-lg btn-orange">
+                        <Button size="lg" color="orange">
                             Reservation
-                        </button>
+                        </Button>
                     </div>
                 </div>
             </section>

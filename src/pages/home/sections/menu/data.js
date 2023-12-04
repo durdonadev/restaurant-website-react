@@ -52,7 +52,7 @@ export const meals = [
     {
         name: "Splitza Signature",
         image: menuSplitza,
-        descriptiont:
+        description:
             "Lorem ipsum dolor sit amet, consectetur, adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.",
         rating: [1, 1, 1, 1, 1],
         price: "$17.99"

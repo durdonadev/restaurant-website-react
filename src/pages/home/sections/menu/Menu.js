@@ -1,9 +1,10 @@
 import React from "react";
+import "./Menu.css";
 import { meals } from "./data";
+import { Button } from "../../../../design-system/Button/Button";
 
 import starFilled from "../../../../assets/star-filled.svg";
 import starEmpty from "../../../../assets/star-empty.svg";
-import "./Menu.css";
 
 const Star = (props) => {
     return (
@@ -27,7 +28,9 @@ const Meal = (props) => {
             <p className="card__text">{props.description}</p>
             <div className="card__footer">
                 <span className="menu-section__price">{props.price}</span>
-                <button className="btn btn-md btn-orange">Order Now</button>
+                <Button size="md" color="orange">
+                    Order Now
+                </Button>
             </div>
         </div>
     );
@@ -40,13 +43,21 @@ class Menu extends React.Component {
                 <div className="menu-section__container container">
                     <h2>Our Popular Menu</h2>
                     <div className="menu-section__filters">
-                        <button className="btn btn-lg btn-black">
+                        <Button size="lg" color="black">
                             All Catagories
-                        </button>
-                        <button className="btn btn-lg btn-grey">Dinner</button>
-                        <button className="btn btn-lg btn-grey">Lunch</button>
-                        <button className="btn btn-lg btn-grey">Dessert</button>
-                        <button className="btn btn-lg btn-grey">Drinks</button>
+                        </Button>
+                        <Button size="lg" color="gray">
+                            Dinner
+                        </Button>
+                        <Button size="lg" color="gray">
+                            Lunch
+                        </Button>
+                        <Button size="lg" color="gray">
+                            Dessert
+                        </Button>
+                        <Button size="lg" color="gray">
+                            Drinks
+                        </Button>
                     </div>
                     <div className="menu-section__meals">
                         {meals.map((meal, idx) => {

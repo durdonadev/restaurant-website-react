@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hours.css";
+import { Button } from "../../../../design-system/Button/Button";
 
 class Hours extends React.Component {
     render() {
@@ -15,12 +16,12 @@ class Hours extends React.Component {
                                 <p>Dinner : Sunday : 04:00pm-08:00pm</p>
                                 <p>04:00pm-09:00pm</p>
                             </div>
-                            <button className="btn btn-lg btn-orange">
+                            <Button size="lg" color="orange">
                                 Order Now
-                            </button>
-                            <button className="btn btn-lg btn-white">
+                            </Button>
+                            <Button size="lg" color="white">
                                 Reservation
-                            </button>
+                            </Button>
                         </div>
                     </div>
                 </div>

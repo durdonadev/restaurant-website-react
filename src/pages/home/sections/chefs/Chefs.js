@@ -1,6 +1,7 @@
 import React from "react";
 import "./Chefs.css";
 import { chefs } from "./data";
+import { Button } from "../../../../design-system/Button/Button";
 
 const Chef = (props) => {
     return (
@@ -32,7 +33,9 @@ class Chefs extends React.Component {
                             );
                         })}
                     </div>
-                    <button className="btn btn-lg btn-orange">More</button>
+                    <Button size="lg" color="orange">
+                        More
+                    </Button>
                 </div>
             </section>
         );

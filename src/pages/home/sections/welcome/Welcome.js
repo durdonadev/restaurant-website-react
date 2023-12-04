@@ -1,6 +1,8 @@
 import React from "react";
-import salad from "../../../../assets/salad.png";
 import "./Welcome.css";
+import { Button } from "../../../../design-system/Button/Button";
+
+import salad from "../../../../assets/salad.png";
 
 class Welcome extends React.Component {
     render() {
@@ -20,9 +22,9 @@ class Welcome extends React.Component {
                             elit. Facilisis ultricies at eleifend proin, Congue
                             nibh nulla malesuada ultricies nec quam
                         </p>
-                        <button className="btn btn-lg btn-orange">
+                        <Button size="lg" color="orange">
                             See Our Menu
-                        </button>
+                        </Button>
                     </div>
                 </div>
             </section>
