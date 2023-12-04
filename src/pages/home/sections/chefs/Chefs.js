@@ -1,7 +1,16 @@
 import React from "react";
+import "./Chefs.css";
 import { chefs } from "./data";
 
-import "./Chefs.css";
+const Chef = (props) => {
+    return (
+        <div className="chefs-section__chef">
+            <img src={props.image} alt={props.name} />
+            <h4>{props.name}</h4>
+            <p>{props.position}</p>
+        </div>
+    );
+};
 
 class Chefs extends React.Component {
     render() {
@@ -14,11 +23,12 @@ class Chefs extends React.Component {
                     <div className="chefs-section__chefs">
                         {chefs.map((chef, idx) => {
                             return (
-                                <div className="chefs-section__chef" key={idx}>
-                                    <img src={chef.image} alt={chef.name} />
-                                    <h4>{chef.name}</h4>
-                                    <p>{chef.position}</p>
-                                </div>
+                                <Chef
+                                    key={idx}
+                                    name={chef.name}
+                                    image={chef.image}
+                                    position={chef.position}
+                                />
                             );
                         })}
                     </div>

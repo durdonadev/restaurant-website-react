@@ -1,22 +1,22 @@
-import ferry from "../../../../assets/ferry.png";
-import iswan from "../../../../assets/iswan.png";
-import betran from "../../../../assets/betran.png";
+import chef2 from "../../../../assets/ferry.png";
+import chef3 from "../../../../assets/iswan.png";
+import chef1 from "../../../../assets/betran.png";
 import "./Chefs.css";
 
 export const chefs = [
     {
         name: "Betrann Komar",
-        image: betran,
+        image: chef1,
         position: "Head Chef"
     },
     {
         name: "Ferry Sauwi",
-        image: ferry,
+        image: chef2,
         position: "Chef"
     },
     {
         name: "Iswan Dracho",
-        image: iswan,
+        image: chef3,
         position: "Chef"
     }
 ];
