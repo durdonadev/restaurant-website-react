@@ -1,7 +1,17 @@
 import React from "react";
+import "./Testimonials.css";
 import { testimonials } from "./data";
 
-import "./Testimonials.css";
+const Testimonial = (props) => {
+    return (
+        <div className="testimonials-section__testimonial">
+            <img src={props.image} alt={props.name} />
+            <h4>{props.name}</h4>
+            <h5>{props.job}</h5>
+            <p>{props.text}</p>
+        </div>
+    );
+};
 
 class Testimonials extends React.Component {
     render() {
@@ -13,18 +23,13 @@ class Testimonials extends React.Component {
                         <div className="testimonials-section__testimonials">
                             {testimonials.map((testimonial, idx) => {
                                 return (
-                                    <div
-                                        className="testimonials-section__testimonial"
+                                    <Testimonial
                                         key={idx}
-                                    >
-                                        <img
-                                            src={testimonial.image}
-                                            alt={testimonial.name}
-                                        />
-                                        <h4>{testimonial.name}</h4>
-                                        <h5>{testimonial.job}</h5>
-                                        <p>{testimonial.text}</p>
-                                    </div>
+                                        name={testimonial.name}
+                                        image={testimonial.image}
+                                        job={testimonial.job}
+                                        text={testimonial.text}
+                                    />
                                 );
                             })}
                         </div>

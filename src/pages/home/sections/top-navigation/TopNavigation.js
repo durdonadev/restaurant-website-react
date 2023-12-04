@@ -9,8 +9,7 @@ const links = [
     { text: "Menu", link: "https://facebook.com" },
     { text: "About Us", link: "" },
     { text: "Reservation", link: "" },
-    { text: "Contact Us", link: "" },
-    { text: "Branding", link: "./branding.html" }
+    { text: "Contact Us", link: "" }
 ];
 
 const TopNavigation = () => {
