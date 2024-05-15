@@ -1,6 +1,6 @@
 import React from "react";
 import hero from "../../../../assets/hero.png";
-import "./Hero.css";
+import "./Hero.scss";
 import { Button } from "../../../../design-system/Button/Button";
 
 class Hero extends React.Component {
@@ -29,11 +29,7 @@ class Hero extends React.Component {
                     </div>
 
                     <div className="hero-section__right">
-                        <img
-                            src={hero}
-                            alt="Spaghetti"
-                            className="hero-section__img"
-                        />
+                        <img src={hero} alt="Spaghetti" />
                     </div>
                 </div>
             </section>
