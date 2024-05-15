@@ -1,7 +1,6 @@
 import chef2 from "../../../../assets/ferry.png";
 import chef3 from "../../../../assets/iswan.png";
 import chef1 from "../../../../assets/betran.png";
-import "./Chefs.css";
 
 export const chefs = [
     {
