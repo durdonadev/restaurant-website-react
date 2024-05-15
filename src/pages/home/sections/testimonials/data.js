@@ -1,7 +1,6 @@
 import starla from "../../../../assets/customer-2.png";
 import james from "../../../../assets/customer-1.png";
 import tosh from "../../../../assets/customer-3.png";
-import "./Testimonials.css";
 
 export const testimonials = [
     {

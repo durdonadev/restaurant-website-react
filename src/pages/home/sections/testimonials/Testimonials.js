@@ -1,5 +1,5 @@
 import React from "react";
-import "./Testimonials.css";
+import "./Testimonials.scss";
 import { testimonials } from "./data";
 
 const Testimonial = (props) => {
