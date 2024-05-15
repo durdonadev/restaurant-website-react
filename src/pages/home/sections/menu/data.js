@@ -6,7 +6,7 @@ import menuRisoto from "../../../../assets/menu-risoto.png";
 import menuSplitza from "../../../../assets/menu-splitza.png";
 import starFilled from "../../../../assets/star-filled.svg";
 import starEmpty from "../../../../assets/star-empty.svg";
-import "./Menu.css";
+import "./Menu.scss";
 
 export const meals = [
     {
