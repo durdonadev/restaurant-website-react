@@ -1,0 +1,38 @@
+/* Reservation Section */
+
+#reservation-section {
+    background-color: rgba(255, 244, 231, 0.4);
+}
+
+.reservation-section__container {
+    padding-left: 0;
+    padding-right: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.reservation-section__left {
+    width: 55%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.reservation-section__right {
+    width: 45%;
+
+    span {
+        color: var(--orange-color);
+    }
+
+    p {
+        color: var(--text-color);
+        margin-bottom: 40px;
+    }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Reservation.css";
+import "./Reservation.scss";
 import { Button } from "../../../../design-system/Button/Button";
 
 import reservation from "../../../../assets/reservation.png";
