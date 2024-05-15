@@ -1,4 +1,4 @@
-import "./TopNavigation.css";
+import "./TopNavigation.scss";
 import { Button } from "../../../../design-system/Button/Button";
 
 import logoWhite from "../../../../assets/logo-white.svg";
