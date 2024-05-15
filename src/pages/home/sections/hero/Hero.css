@@ -30,7 +30,7 @@
     width: max-content;
     margin-bottom: 24px;
     color: var(--white-color);
-    color: var(--orange-color);
+    background-color: var(--orange-color);
     font-size: 18px;
     border-radius: 123px;
     padding: 5px 20px;
