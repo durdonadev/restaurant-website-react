@@ -1,0 +1,46 @@
+/* Business Hours Section */
+
+.hours-section__container {
+    .hours-section__background {
+        max-width: 1150px;
+        height: 750px;
+        margin: 0 auto;
+        border-radius: 150px;
+
+        background-image: url(../../../../assets/business-hours.png);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .hours-section__hours {
+            h2 {
+                color: var(--white-color);
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                color: var(--white-color);
+                font-size: 30px;
+                line-height: 60px;
+                font-weight: 600;
+            }
+
+            .hours-section__lunch-dinner {
+                width: max-content;
+                margin: 0 auto;
+                margin-bottom: 50px;
+
+                p {
+                    color: var(--white-color);
+                    text-align: right;
+                }
+            }
+
+            .btn-orange {
+                margin-right: 15px;
+            }
+        }
+    }
+}

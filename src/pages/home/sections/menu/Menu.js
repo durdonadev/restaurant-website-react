@@ -1,5 +1,5 @@
 import React from "react";
-import "./Menu.css";
+import "./Menu.scss";
 import { meals } from "./data";
 import { Button } from "../../../../design-system/Button/Button";
 

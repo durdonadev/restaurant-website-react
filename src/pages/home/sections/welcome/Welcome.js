@@ -1,5 +1,5 @@
 import React from "react";
-import "./Welcome.css";
+import "./Welcome.scss";
 import { Button } from "../../../../design-system/Button/Button";
 
 import salad from "../../../../assets/salad.png";

@@ -1,4 +1,4 @@
-import "./TopNavigation.css";
+import "./TopNavigation.scss";
 import { Button } from "../../../../design-system/Button/Button";
 
 import logoWhite from "../../../../assets/logo-white.svg";
@@ -12,6 +12,14 @@ const links = [
     { text: "Contact Us", link: "" }
 ];
 
+const Link = (props) => {
+    return (
+        <li>
+            <a href={props.link}>{props.text}</a>
+        </li>
+    );
+};
+
 const TopNavigation = () => {
     return (
         <header className="header">
@@ -20,9 +28,7 @@ const TopNavigation = () => {
                 <ul className="navigation__links">
                     {links.map((link, idx) => {
                         return (
-                            <li key={idx}>
-                                <a href={link.link}>{link.text}</a>
-                            </li>
+                            <Link key={idx} link={link.link} text={link.text} />
                         );
                     })}
                 </ul>

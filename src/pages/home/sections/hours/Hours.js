@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hours.css";
+import "./Hours.scss";
 import { Button } from "../../../../design-system/Button/Button";
 
 class Hours extends React.Component {

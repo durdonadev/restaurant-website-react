@@ -3,23 +3,16 @@ import logo_dark from "../../../../assets/logo-dark.svg";
 import twitter from "../../../../assets/twitter.svg";
 import instagram from "../../../../assets/instagram.svg";
 import facebook from "../../../../assets/facebook.svg";
-import "./Footer.css";
+import "./Footer.scss";
+import { pageLinks, informationLinks, contactLinks } from "./data";
 
-const pageLinks = [
-    { text: "Home", link: "https://google.com" },
-    { text: "Menu", link: "" },
-    { text: "Order Online ", link: "" },
-    { text: "Catering", link: "" },
-    { text: "Reservation", link: "" }
-];
-
-const informationLinks = [
-    { text: "About Us", link: "" },
-    { text: "Testimonial", link: "" },
-    { text: "Event ", link: "" },
-    { text: "Catering", link: "" },
-    { text: "Reservation", link: "" }
-];
+const Link = (props) => {
+    return (
+        <a href={props.link} className="footer__text">
+            {props.text}
+        </a>
+    );
+};
 
 class Footer extends React.Component {
     render() {
@@ -47,13 +40,11 @@ class Footer extends React.Component {
                             <h4 className="footer__heading">Page</h4>
                             {pageLinks.map((link, idx) => {
                                 return (
-                                    <a
-                                        href={link.link}
-                                        className="footer__text"
+                                    <Link
                                         key={idx}
-                                    >
-                                        {link.text}
-                                    </a>
+                                        link={link.link}
+                                        text={link.text}
+                                    />
                                 );
                             })}
                         </div>
@@ -61,13 +52,11 @@ class Footer extends React.Component {
                             <h4 className="footer__heading">Information</h4>
                             {informationLinks.map((link, idx) => {
                                 return (
-                                    <a
-                                        href={link.link}
-                                        className="footer__text"
+                                    <Link
                                         key={idx}
-                                    >
-                                        {link.text}
-                                    </a>
+                                        link={link.link}
+                                        text={link.text}
+                                    />
                                 );
                             })}
                         </div>
@@ -77,15 +66,15 @@ class Footer extends React.Component {
                                 3247 Johnson Ave, <br />
                                 Bronx, NY 10463
                             </p>
-                            <a
-                                href="mailto: delizioso@gmail.com"
-                                className="footer__text"
-                            >
-                                delizioso@gmail.com
-                            </a>
-                            <a href="tel:347-567-2828" className="footer__text">
-                                347-567-2828
-                            </a>
+                            {contactLinks.map((link, idx) => {
+                                return (
+                                    <Link
+                                        key={idx}
+                                        link={link.link}
+                                        text={link.text}
+                                    />
+                                );
+                            })}
                         </div>
                     </div>
                     <p className="footer__text text-center">

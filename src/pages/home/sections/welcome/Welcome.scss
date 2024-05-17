@@ -1,0 +1,34 @@
+/* Welcome Section */
+
+#welcome-section {
+    background-color: rgba(63, 198, 110, 0.102);
+}
+
+.welcome-section__container {
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-left: 80px;
+}
+
+.welcome-section__left {
+    width: 55%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.welcome-section__right {
+    width: 45%;
+
+    h2 span {
+        color: var(--orange-color);
+    }
+
+    p {
+        color: var(--text-color);
+        margin-bottom: 40px;
+    }
+}

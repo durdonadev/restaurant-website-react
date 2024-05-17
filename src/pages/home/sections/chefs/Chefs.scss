@@ -1,0 +1,51 @@
+/* Chefs Section */
+
+#chefs-section {
+    text-align: center;
+
+    .chefs-section__container {
+        h2 span {
+            color: var(--orange-color);
+        }
+
+        .chefs-section__chefs {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 80px;
+
+            .chefs-section__chef {
+                width: calc((100% - 80px) / 3);
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 50px;
+                margin-bottom: 40px;
+            }
+
+            h4 {
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: rgb(160, 141, 118);
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 50px;
+            }
+        }
+
+        .chefs-section__chef:first-child img {
+            background-color: rgb(196, 196, 196);
+        }
+
+        .chefs-section__chef:nth-child(2) img {
+            background-color: rgba(255, 138, 0, 0.2);
+        }
+
+        .chefs-section__chef:last-child img {
+            background-color: rgba(157, 101, 66, 0.2);
+        }
+    }
+}
