@@ -3,7 +3,7 @@ import logo_dark from "../../../../assets/logo-dark.svg";
 import twitter from "../../../../assets/twitter.svg";
 import instagram from "../../../../assets/instagram.svg";
 import facebook from "../../../../assets/facebook.svg";
-import "./Footer.css";
+import "./Footer.scss";
 import { pageLinks, informationLinks, contactLinks } from "./data";
 
 const Link = (props) => {

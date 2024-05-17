@@ -1,5 +1,3 @@
-import "./Footer.css";
-
 export const pageLinks = [
     { text: "Home", link: "https://google.com" },
     { text: "Menu", link: "" },
