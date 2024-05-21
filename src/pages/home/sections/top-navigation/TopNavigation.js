@@ -55,11 +55,14 @@ const TopNavigation = () => {
             </nav>
             {showMenu && (
                 <nav className="mobile-nav">
-                    <ul className="navigation__links">
+                    <ul className="mobile-navigation__links">
                         {links.map((link, idx) => (
                             <Link key={idx} link={link.link} text={link.text} />
                         ))}
                     </ul>
+                    <Button size="sm" color="green">
+                        Sign In
+                    </Button>
                 </nav>
             )}
         </header>
