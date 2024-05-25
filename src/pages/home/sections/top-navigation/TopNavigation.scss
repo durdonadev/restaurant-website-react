@@ -94,6 +94,10 @@
     .mobile-nav {
         padding: 4rem 4.8rem;
         text-align: center;
+        width: 100%;
+        background-color: var(--white-color);
+        z-index: 5;
+        position: absolute;
 
         .mobile-navigation__links li {
             display: block;
