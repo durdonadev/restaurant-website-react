@@ -7,8 +7,6 @@
 .welcome-section__container {
     display: flex;
     align-items: center;
-    padding-top: 80px;
-    padding-left: 80px;
 }
 
 .welcome-section__left {
@@ -30,5 +28,25 @@
     p {
         color: var(--text-color);
         margin-bottom: 40px;
+    }
+}
+
+/* Media-query */
+
+/* Mobile */
+@media (max-width: 40em) {
+    .welcome-section__container {
+        display: block;
+
+        .welcome-section__left {
+            display: block;
+            width: 100%;
+            margin-bottom: 3.6rem;
+        }
+
+        .welcome-section__right {
+            display: block;
+            width: 100%;
+        }
     }
 }

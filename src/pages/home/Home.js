@@ -13,8 +13,8 @@ const Home = () => {
         <>
             <TopNavigation />
             <Hero />
-            {/* <Welcome />
-            <Menu />
+            <Welcome />
+            {/* <Menu />
             <Reservation />
             <Chefs />
             <Testimonials />

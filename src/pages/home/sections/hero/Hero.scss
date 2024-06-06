@@ -51,25 +51,6 @@
 }
 
 /* Media-query */
-/* Tablet */
-@media (max-width: 70em) {
-    .hero-section__container {
-    }
-}
-
-@media (max-width: 60em) {
-    .hero-section__container {
-        padding-right: 6.4rem;
-        padding-left: 6.4rem;
-    }
-}
-
-@media (max-width: 50em) {
-    .hero-section__container {
-        padding-right: 4.8rem;
-        padding-left: 4.8rem;
-    }
-}
 
 /* Mobile */
 @media (max-width: 40em) {
