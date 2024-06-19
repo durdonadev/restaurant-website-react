@@ -34,19 +34,19 @@
 /* Media-query */
 
 /* Mobile */
-@media (max-width: 40em) {
+@media (max-width: 68.75em) {
     .welcome-section__container {
-        display: block;
+        flex-direction: column;
 
         .welcome-section__left {
-            display: block;
+            order: 2;
             width: 100%;
-            margin-bottom: 3.6rem;
         }
 
         .welcome-section__right {
-            display: block;
+            order: 1;
             width: 100%;
+            margin-bottom: 3.6rem;
         }
     }
 }
