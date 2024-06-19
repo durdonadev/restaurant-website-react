@@ -51,13 +51,10 @@
 }
 
 /* Media-query */
-
-/* Mobile */
-@media (max-width: 40em) {
+/* Tablet */
+@media (max-width: 68.75em) {
     .hero-section__container {
         display: block;
-        padding-right: 2.8rem;
-        padding-left: 2.8rem;
 
         .hero-section__left {
             display: block;
@@ -69,5 +66,13 @@
             display: block;
             width: 100%;
         }
+    }
+}
+
+/* Mobile */
+@media (max-width: 40em) {
+    .hero-section__container {
+        padding-right: 2.8rem;
+        padding-left: 2.8rem;
     }
 }
